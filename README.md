@@ -1,2 +1,4 @@
-# Rocket-seat-discover-1
-Guardar projetos de estudo da trilha Discover da Rocket Seat
+# Rocket-seat-discovery-1-nodejs-ejs
+Um site feito na trilha Discovery da plataforma Rocket Seat usando NodeJS + EJS
+
+
