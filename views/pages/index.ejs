@@ -1,0 +1,28 @@
+<!-- NPM INSTALL EJS -->
+<!-- NPM INSTALL EXPRESS -->
+<!-- CRIAR A PASTA VIEWS ANTES DE RODAR EJS -->
+
+<!DOCTYPE html>
+
+<%- include('../partials/head'); %>
+
+<html lang="pt-br">
+    <body class="container">
+        <%- include('../partials/header', {pagina: 'Home'}); %>
+        <main>
+            <div class="bg-secondary text-white p-5 rounded-lg m-3">
+                <h1 class="display-4">Node com EJs</h1>
+                <p class="lead">Vamos aprender a trabalhar com arquivos EJS</p>
+                <p><%= subtitle %></p>
+            </div>
+            <ul>
+                <% qualities.forEach(function(quality){ %>
+                    <li>
+                        <strong><%= quality.title %></strong><%= quality.message %>
+                    </li>
+                <% }) %>  
+            </ul>
+        </main>
+        <%- include('../partials/footer'); %>
+    </body>
+</html>
